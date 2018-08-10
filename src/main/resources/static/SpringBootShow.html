@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MySpringBoot</title>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $.ajax({ url: "/myroot/boot/hello",
+                     // dataType:'json',
+                     success: function(data){
+                         alert(data);
+                         $("#myspan").html(data);
+                     }});
+        });
+    </script>
+</head>
+<body>
+111
+    <span id="myspan"></span>
+</body>
+</html>
