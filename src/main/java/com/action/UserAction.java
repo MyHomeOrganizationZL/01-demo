@@ -9,7 +9,7 @@ public class UserAction {
 
     @RequestMapping
     public Object getUserlist(){
-
+        System.out.println("mycommit");
         return null;
     }
 }
